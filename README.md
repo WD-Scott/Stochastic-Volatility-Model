@@ -16,9 +16,13 @@ Data were pulled from the Yahoo Finance (`yfinance`) Python library.
 ## Main Packages and Dependencies:
 
 `PyMC`:     5.6.1
+
 `Numpy`:    1.23.5
+
 `Pandas`:   2.0.3
+
 `Arviz`:    0.16.1
+
 `Sklearn`:  1.3.0
 - - - -
 
