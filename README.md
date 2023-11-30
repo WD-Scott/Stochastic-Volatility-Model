@@ -20,7 +20,7 @@ I model the logarithm of the daily returns with a Student-T distribution, para
 
 The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution.
 
-![Alt text](image link)
+![Alt text]([image link](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/model_platnotation.png))
 
 I model the logarithmic returns at each timepoint. 
 
