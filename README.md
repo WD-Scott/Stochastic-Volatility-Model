@@ -16,7 +16,7 @@ To develop the model, I pull the data from the `yfinance` package into a Pandas 
 
 I model the logarithm of the daily returns with a Student-T distribution, parameterized by:
 - the degrees of freedom (`𝜈`) following an exponential distribution 
-- volatility (`$𝑠_𝑖$`), where (`𝑖`) is the time index 
+- volatility ($𝑠_𝑖$), where (`𝑖`) is the time index 
 
 The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution. 
 
