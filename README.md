@@ -8,7 +8,7 @@ I developed this project for the DS6040 (Bayesian Machine Learning) Data Science
 
 ## Synopsis:
 
-Apple stock returns exhibit high time-varying volatility – quite stable sometimes, highly variable at others, and the distribution of market returns is highly non-gaussian. Thus, sampling Apple volatilities would be very difficult.
+Apple stock returns exhibit high time-varying volatility – quite stable sometimes, highly variable at others, and the distribution of market returns is highly non-gaussian. Thus, sampling Apple stock volatilities would be very difficult.
 
 Stochastic Volatility (SV) models help capture such dynamic volatility, creating a more realistic representation of changing market risks. As a Bayesian method, these models provide uncertainty estimates, enabling better risk management.
 
