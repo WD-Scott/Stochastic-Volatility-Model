@@ -32,7 +32,7 @@ One thing worth noting is that I have a single variance (𝜎) for the volatilit
 
 I use the `PyMC` package to develop the SV model by writing a basic function that takes the Pandas dataframe as its input and returns the PyMC model. The model is parametrized by the stochastic process previously described to capture the volatility dynamics.
 
-![Alt text](image link)
+![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/pymc_def.png)
 
 The notebook includes several visualizations with markdown cells above them providing descriptions.
 
