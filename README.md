@@ -20,8 +20,6 @@ I model the logarithm of the daily returns with a Student-T distribution, para
 
 The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution.
 
-![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/model_platnotation.png)
-
 I model the logarithmic returns at each timepoint. 
 
 The model allows the volatility to change over time, such that the volatility at each time point is controlled by a parameter for that time point ($𝑠_𝑖$). 
@@ -30,12 +28,31 @@ But, the scale parameters ($𝑠_𝑖$) at each timepoint cannot be completely i
 
 One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not be representative of the true nature of stock return behavior.
 
+![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/model_platnotation.png)
+
 I use the `PyMC` package to develop the SV model by writing a basic function that takes the Pandas dataframe as its input and returns the PyMC model. The model is parametrized by the stochastic process previously described to capture the volatility dynamics.
 
-![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/pymc_def.png)
+```python
+def sv_model(data):
+    with pm.Model(coords={"time": data.index.values}) as model:
+        𝜎 = pm.Exponential("𝜎", 10)
+        volatility = pm.GaussianRandomWalk(
+            "volatility", sigma=𝜎, 
+            dims="time", init_dist=pm.Normal.dist(0, 100)
+        )
+        𝜈 = pm.Exponential("𝜈", 0.1)
+        r = pm.StudentT(
+            "r", nu=𝜈, 
+            lam=np.exp(-2 * volatility), 
+            observed=data["return"], dims="time"
+        )
+    return model
+
+
+svol_model = sv_model(df)
+```
 
 The notebook includes several visualizations with markdown cells above them providing descriptions.
-
 
 ## Data:
 
