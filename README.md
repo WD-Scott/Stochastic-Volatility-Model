@@ -35,7 +35,7 @@ The notebook includes several visualizations with markdown cells above them prov
 
 ## Data:
 
-Apple stock data were pulled from the Yahoo Finance (`Yfinance`) Python library for dates roughly ranging from 2007 to 2022.
+I pulled the Apple stock the Yahoo Finance package for 2007 through 2022.
 
 - - - -
 ## Main Packages and Dependencies:
