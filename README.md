@@ -18,7 +18,9 @@ I model the logarithm of the daily returns with a Student-T distribution, para
 - the degrees of freedom ($𝜈$) following an exponential distribution 
 - volatility ($𝑠_𝑖$), where ($𝑖$) is the time index 
 
-The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution. 
+The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution.
+
+![Alt text](image link)
 
 I model the logarithmic returns at each timepoint. 
 
@@ -29,6 +31,8 @@ But, the scale parameters ($𝑠_𝑖$) at each timepoint cannot be completely i
 One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not be representative of the true nature of stock return behavior.
 
 I use the `PyMC` package to develop the SV model by writing a basic function that takes the Pandas dataframe as its input and returns the PyMC model. The model is parametrized by the stochastic process previously described to capture the volatility dynamics.
+
+![Alt text](image link)
 
 The notebook includes several visualizations with markdown cells above them providing descriptions.
 
