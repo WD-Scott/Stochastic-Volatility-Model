@@ -15,18 +15,18 @@ Stochastic Volatility (SV) models help capture such dynamic volatility, creating
 To develop the model, I pull the data from the `yfinance` package into a Pandas dataframe and calculate a 'returns' column as the difference in the logarithmic returns, which I then use to model the volatility.
 
 I model the logarithm of the daily returns with a Student-T distribution, parameterized by:
-- the degrees of freedom (`𝜈`) following an exponential distribution 
-- volatility ($𝑠_𝑖$), where (`𝑖`) is the time index 
+- the degrees of freedom ($𝜈$) following an exponential distribution 
+- volatility ($𝑠_𝑖$), where ($𝑖$) is the time index 
 
 The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution. 
 
 I model the logarithmic returns at each timepoint. 
 
-The model allows the volatility to change over time, such that the volatility at each time point is controlled by a parameter for that time point (`$𝑠_𝑖$`). 
+The model allows the volatility to change over time, such that the volatility at each time point is controlled by a parameter for that time point ($𝑠_𝑖$). 
 
-But, the scale parameters (`$𝑠_𝑖$`) at each timepoint cannot be completely independent, otherwise, the model would overfit the data.
+But, the scale parameters ($𝑠_𝑖$) at each timepoint cannot be completely independent, otherwise, the model would overfit the data.
 
-One thing worth noting is that I have a single variance (`𝜎`) for the volatility process across all time, which may not be representative of the true nature of stock return behavior.
+One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not be representative of the true nature of stock return behavior.
 
 I use the `PyMC` package to develop the SV model by writing a basic function that takes the Pandas dataframe as its input and returns the PyMC model. The model is parametrized by the stochastic process previously described to capture the volatility dynamics.
 
