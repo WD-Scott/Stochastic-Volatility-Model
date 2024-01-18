@@ -20,13 +20,13 @@ I model the logarithm of the daily returns with a Student-T distribution, para
 
 The volatility follows a Gaussian random walk across all time steps, parameterized by a common variance given by an exponential distribution.
 
-I model the logarithmic returns at each timepoint. 
+I model the logarithmic returns at each time point. 
 
 The model allows the volatility to change over time, such that the volatility at each time point is controlled by a parameter for that time point ($𝑠_𝑖$). 
 
-But, the scale parameters ($𝑠_𝑖$) at each timepoint cannot be completely independent, otherwise, the model would overfit the data.
+However, the scale parameters ($𝑠_𝑖$) at each time point cannot be completely independent; otherwise, the model would overfit the data.
 
-One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not be representative of the true nature of stock return behavior.
+One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not represent the true nature of stock return behavior.
 
 ![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/model_platnotation.png)
 
