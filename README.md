@@ -1,4 +1,4 @@
-# Bayesian Machine Learing – Stochastic Volatility Model:
+# Bayesian Machine Learning – Stochastic Volatility Model:
 
 ## Metadata:
 
