@@ -56,7 +56,7 @@ The notebook includes several visualizations with markdown cells above them prov
 
 ## Data:
 
-I pulled the Apple stock the Yahoo Finance package for 2007 through 2022.
+I pulled the Apple stock data from the Yahoo Finance package for 2007 through 2022.
 
 - - - -
 ## Main Packages and Dependencies:
