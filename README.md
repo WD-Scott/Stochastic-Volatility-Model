@@ -33,7 +33,7 @@ However, the scale parameters ($𝑠_𝑖$) at each time point cannot be complet
 One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not represent the true nature of stock return behavior.
 
 <div align="center">
-    <img src="images/plate_not.png">
+    <img src="images/plat_not.png">
 </div>
 <p align="center">
 
