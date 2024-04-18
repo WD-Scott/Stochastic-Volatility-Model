@@ -32,7 +32,10 @@ However, the scale parameters ($𝑠_𝑖$) at each time point cannot be complet
 
 One thing worth noting is that I have a single variance (𝜎) for the volatility process across all time, which may not represent the true nature of stock return behavior.
 
-![Alt text](https://github.com/WD-Scott/Stochastic-Volatility-Model/blob/main/model_platnotation.png)
+<div align="center">
+    <img src="images/plate_not.png">
+</div>
+<p align="center">
 
 I use the `PyMC` package to develop the SV model by writing a basic function that takes the Pandas dataframe as its input and returns the PyMC model. The model is parametrized by the stochastic process previously described to capture the volatility dynamics.
 
