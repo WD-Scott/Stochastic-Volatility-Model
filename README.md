@@ -8,7 +8,7 @@
 
 This repo includes the Python code for a Stochastic Volatility Model of Apple stock returns from 2007-2022.
 
-I developed this project for the DS6040 (Bayesian Machine Learning) Data Science masters program at the University of Virginia.
+I developed this project for the DS6040 (Bayesian Machine Learning) course in the Data Science masters program at the University of Virginia.
 
 ## Synopsis:
 
