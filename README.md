@@ -14,7 +14,7 @@ I developed this project for the DS6040 (Bayesian Machine Learning) course in th
 
 Apple stock returns exhibit high time-varying volatility – quite stable sometimes, highly variable at others, and the distribution of market returns is highly non-gaussian. Thus, sampling Apple stock volatilities would be very difficult.
 
-Stochastic Volatility (SV) models help capture such dynamic volatility, creating a more realistic representation of changing market risks. As a Bayesian method, these models provide uncertainty estimates, enabling better risk management.
+Stochastic Volatility (SV) models help capture such dynamic volatility, creating a more realistic representation of changing market risks. Leveraging Bayesian methods, the model provides uncertainty estimates, enabling better risk management.
 
 To develop the model, I pull the data from the `yfinance` package into a Pandas dataframe and calculate a 'returns' column as the difference in the logarithmic returns, which I then use to model the volatility.
 
